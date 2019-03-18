@@ -4,14 +4,12 @@
 #
 Name     : R-prabclus
 Version  : 2.2.7
-Release  : 16
+Release  : 17
 URL      : https://cran.r-project.org/src/contrib/prabclus_2.2-7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/prabclus_2.2-7.tar.gz
 Summary  : Functions for Clustering of Presence-Absence, Abundance and
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: R-e1071
-Requires: R-mvtnorm
 BuildRequires : R-e1071
 BuildRequires : R-mclust
 BuildRequires : R-mvtnorm
@@ -32,10 +30,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552874435
+export SOURCE_DATE_EPOCH=1552893927
 
 %install
-export SOURCE_DATE_EPOCH=1552874435
+export SOURCE_DATE_EPOCH=1552893927
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
