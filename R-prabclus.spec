@@ -4,7 +4,7 @@
 #
 Name     : R-prabclus
 Version  : 2.2.7
-Release  : 17
+Release  : 18
 URL      : https://cran.r-project.org/src/contrib/prabclus_2.2-7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/prabclus_2.2-7.tar.gz
 Summary  : Functions for Clustering of Presence-Absence, Abundance and
