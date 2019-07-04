@@ -4,7 +4,7 @@
 #
 Name     : R-prabclus
 Version  : 2.3.1
-Release  : 20
+Release  : 21
 URL      : https://cran.r-project.org/src/contrib/prabclus_2.3-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/prabclus_2.3-1.tar.gz
 Summary  : Functions for Clustering and Testing of Presence-Absence,
@@ -12,11 +12,9 @@ Group    : Development/Tools
 License  : GPL-2.0
 Requires: R-bootstrap
 Requires: R-mclust
-Requires: R-spatialreg
 Requires: R-spdep
 BuildRequires : R-bootstrap
 BuildRequires : R-mclust
-BuildRequires : R-spatialreg
 BuildRequires : R-spdep
 BuildRequires : buildreq-R
 
@@ -35,13 +33,13 @@ spatial neighborhood information. Some distance measures,
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1559700696
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1562210969
 
 %install
-export SOURCE_DATE_EPOCH=1559700696
+export SOURCE_DATE_EPOCH=1562210969
 rm -rf %{buildroot}
-export LANG=C
+export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -70,7 +68,7 @@ R CMD INSTALL --preclean --install-tests --built-timestamp=${SOURCE_DATE_EPOCH} 
 cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 %{__rm} -rf %{buildroot}%{_datadir}/R/library/R.css
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
