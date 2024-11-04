@@ -7,7 +7,7 @@
 #
 Name     : R-prabclus
 Version  : 2.3.4
-Release  : 54
+Release  : 55
 URL      : https://cran.r-project.org/src/contrib/prabclus_2.3-4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/prabclus_2.3-4.tar.gz
 Summary  : Functions for Clustering and Testing of Presence-Absence,
